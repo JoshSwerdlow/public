@@ -1,18 +1,18 @@
 angular.module('listings', []).factory('Listings', function($http) {
   var methods = {
     getAll: function() {
-      return $http.get('http:///api/listings');
+      return $http.get('https://joshswerdlow-bootcamp4.herokuapp.com//api/listings');
     },
 
 	create: function(listing) {
-	  return $http.post('http:///api/listings', listing);
+	  return $http.post('https://joshswerdlow-bootcamp4.herokuapp.com//api/listings', listing);
     },
 
     delete: function(id) {
 	   /**TODO
         return result of HTTP delete method
        */
-       return $http.delete('http:///api/listings', id);
+       return $http.delete('https://joshswerdlow-bootcamp4.herokuapp.com//api/listings', id);
     }
   };
 
